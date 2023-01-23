@@ -17,6 +17,9 @@ searchButton.addEventListener("click", (Event) => {
 
   .then((parsed) => {
     imgGif.src = parsed.data.images.original.url
+    searchInput.value = ""
+    feedBackele.textContent = ""
+
   })
 
   .catch((err) => {
